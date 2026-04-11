@@ -5,8 +5,6 @@ namespace App\Http\Controllers;
 use App\Models\Buku;
 use Illuminate\Http\Request;
 
-// Note: Request masih dipakai oleh store() dan update()
-
 class BukuController extends Controller
 {
     public function __construct()
