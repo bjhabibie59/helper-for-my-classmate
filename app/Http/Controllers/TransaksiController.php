@@ -74,7 +74,7 @@ class TransaksiController extends Controller
             'status'               => 'ditunda', // menunggu persetujuan admin
         ]);
 
-        return redirect()->route('transaksi.riwayat')
+        return redirect()->route('peminjam.transaksi.riwayat')
             ->with('success', 'Permohonan peminjaman berhasil dikirim, menunggu persetujuan admin.');
     }
 
