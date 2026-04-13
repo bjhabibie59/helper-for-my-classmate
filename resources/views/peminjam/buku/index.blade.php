@@ -35,7 +35,7 @@
                 </div>
 
                 @if($tersedia > 0)
-                    <a href="{{ route('transaksi.create', ['buku_id' => $buku->id]) }}"
+                    <a href="{{ route('peminjam.transaksi.create', ['buku_id' => $buku->id]) }}"
                        class="block w-full text-center bg-blue-600 hover:bg-blue-700 text-white text-xs font-semibold py-2 rounded-lg transition">
                         Pinjam Sekarang
                     </a>

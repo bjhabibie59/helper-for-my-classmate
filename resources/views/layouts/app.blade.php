@@ -46,6 +46,16 @@
                             Semua Transaksi
                         </a>
 
+                        <a href="{{ route('admin.anggota.index') }}"
+                           class="flex items-center gap-3 px-3 py-2 rounded-lg text-sm font-medium transition
+                                  {{ request()->routeIs('admin.anggota.*') ? 'bg-blue-600 text-white' : 'text-slate-300 hover:bg-slate-800 hover:text-white' }}">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                      d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/>
+                            </svg>
+                            Kelola Anggota
+                        </a>
+
                     @elseif(auth()->user()->isPeminjam())
                         <p class="px-3 pt-2 pb-1 text-xs font-semibold text-slate-500 uppercase tracking-widest">Menu</p>
 
@@ -69,18 +79,18 @@
                             Koleksi Buku
                         </a>
 
-                        <a href="{{ route('transaksi.create') }}"
+                        <a href="{{ route('peminjam.transaksi.create') }}"
                            class="flex items-center gap-3 px-3 py-2 rounded-lg text-sm font-medium transition
-                                  {{ request()->routeIs('transaksi.create') ? 'bg-blue-600 text-white' : 'text-slate-300 hover:bg-slate-800 hover:text-white' }}">
+                                  {{ request()->routeIs('peminjam.transaksi.create') ? 'bg-blue-600 text-white' : 'text-slate-300 hover:bg-slate-800 hover:text-white' }}">
                             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/>
                             </svg>
                             Pinjam Buku
                         </a>
 
-                        <a href="{{ route('transaksi.riwayat') }}"
+                        <a href="{{ route('peminjam.transaksi.riwayat') }}"
                            class="flex items-center gap-3 px-3 py-2 rounded-lg text-sm font-medium transition
-                                  {{ request()->routeIs('transaksi.riwayat') ? 'bg-blue-600 text-white' : 'text-slate-300 hover:bg-slate-800 hover:text-white' }}">
+                                  {{ request()->routeIs('peminjam.transaksi.riwayat') ? 'bg-blue-600 text-white' : 'text-slate-300 hover:bg-slate-800 hover:text-white' }}">
                             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                       d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>

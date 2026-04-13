@@ -9,7 +9,7 @@
 <div class="max-w-xl">
     <div class="bg-white rounded-xl border border-slate-200 p-6">
 
-        <form action="{{ route('transaksi.store') }}" method="POST" class="space-y-5">
+        <form action="{{ route('peminjam.transaksi.store') }}" method="POST" class="space-y-5">
             @csrf
 
             {{-- Pilih Buku --}}
@@ -77,7 +77,7 @@
                         class="bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium px-5 py-2 rounded-lg transition">
                     Ajukan Peminjaman
                 </button>
-                <a href="{{ route('transaksi.riwayat') }}"
+                <a href="{{ route('peminjam.transaksi.riwayat') }}"
                    class="text-sm text-slate-500 hover:text-slate-700 transition">
                     Lihat Riwayat
                 </a>

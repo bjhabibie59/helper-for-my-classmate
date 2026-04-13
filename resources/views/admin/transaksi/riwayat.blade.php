@@ -10,7 +10,7 @@
     <p class="text-sm text-slate-500">
         Total <span class="font-semibold text-slate-700">{{ $transaksis->total() }}</span> transaksi
     </p>
-    <a href="{{ route('transaksi.create') }}"
+    <a href="{{ route('peminjam.transaksi.create') }}"
        class="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium px-4 py-2 rounded-lg transition">
         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/>
@@ -73,7 +73,7 @@
         </svg>
         <p class="text-slate-500 font-medium text-sm">Belum ada riwayat peminjaman</p>
         <p class="text-slate-400 text-xs mt-1">Yuk, mulai pinjam buku pertama Anda!</p>
-        <a href="{{ route('transaksi.create') }}"
+        <a href="{{ route('peminjam.transaksi.create') }}"
            class="inline-block mt-4 bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium px-4 py-2 rounded-lg transition">
             Pinjam Sekarang
         </a>

@@ -8,11 +8,6 @@ use Illuminate\Support\Facades\Auth;
 
 class PeminjamController extends Controller
 {
-    public function __construct()
-    {
-        $this->middleware(['auth', 'role:peminjam']);
-    }
-
     /**
      * Dashboard peminjam.
      * Route: GET /dashboard
