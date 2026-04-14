@@ -14,19 +14,21 @@ class Transaksi extends Model
         'status',
     ];
 
-    protected function casts()
+    protected function casts(): array
     {
         return [
-            'tanggal_peminjaman' => 'date',
+            'tanggal_peminjaman'   => 'date',
             'tanggal_pengembalian' => 'date',
         ];
     }
 
     public function user()
     {
-        if ($this->status === 'dikembalikan') {
-            return false;
-        }
+        return $this->belongsTo(User::class);
     }
 
+    public function buku()
+    {
+        return $this->belongsTo(Buku::class);
+    }
 }
